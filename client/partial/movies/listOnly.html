@@ -5,6 +5,8 @@
         <tr>
             <th><a href="" ng-click="predicate = 'title'; reverse=!reverse" >Title</a>
             </th>
+            <th><a href="" ng-click="predicate = 'year'; reverse=!reverse" >Year</a>
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -12,6 +14,11 @@
             <td>
                 <a href="#" ng-href="/movies/{{movie.id}}">
                     {{movie.title}}
+                </a>
+            </td>
+            <td>
+                <a href="#" ng-href="/movies/{{movie.id}}">
+                    {{movie.year ? movie.year : 'Unknown'}}
                 </a>
             </td>
         </tr>
